@@ -1,0 +1,29 @@
+/** {
+    background-color: ghostwhite;
+}
+
+#titulo {
+    color: crimson;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.texto_grande {
+    font-size: 20px;
+}*/
+
+/*Siguiente lección
+
+h1, h2, p {
+    color: crimson;
+    text-align: center;
+}*/
+
+/*Siguiente*/
+
+p.center {
+    text-align: center;
+}
