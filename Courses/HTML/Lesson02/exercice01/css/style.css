@@ -1,0 +1,11 @@
+h1 {
+    color: crimson;
+}
+
+p {
+    color:wheat;
+    background-color: tomato;
+    padding: 5%;
+    border: 10px solid powderblue;
+    margin: 40px 10px 20px;
+}

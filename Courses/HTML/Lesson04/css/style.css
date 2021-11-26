@@ -1,0 +1,39 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /*border-spacing: 5px;*/
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+caption {
+    color: #E63946;
+    font-family: 'Trocchi', serif;
+    font-size: 40px;
+    line-height: 70px;
+}
+th {
+    color: #f1faee;
+    background-color: #1d3557;
+}
+
+/*Función propia css para los pares*/
+tr:nth-child(even) {
+    background-color: #f1faee;
+}
+
+/*Función propia css para los impares*/
+tr:nth-child(odd) {
+    background-color: #a8dadc;
+}
+/*
+td {
+    text-align: center;
+}
+
+th {
+    text-align: left;
+}*/
