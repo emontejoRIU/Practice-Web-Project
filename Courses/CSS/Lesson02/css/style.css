@@ -16,21 +16,34 @@ h1 {
 .blue {
     border: 10px dotted rgb(64, 224, 208);
 }
- Sigueinte... */
+ Sigueinte... 
 .punteado {
     border-style: dotted;
-}
+    border-width: 10px 5px 3px 2px;
+    border-color: crimson hotpink gold lime;
+}*/
 
-.discotinuo {
+/*.discotinuo {
     border-style: dashed;
-}
+    border-width: thick;/*thin, medium o thick*/
+    /*border-color: rgba(69, 123, 157, 0.5);
+}*/
 
 .solido {
-    border: 10px solid red;
+    border:solid red;
+    border-width: 10px;
+    border-radius: 15px;
 }
 
+.redondeado {
+    border: 5px solid blueviolet;
+    border-radius: 20px 0px 10px 0px;
+}
+/*
+
 .doble {
-    border: 5px double;
+    border: 5px double blueviolet;
+    border-width: 10px 5px;
 }
 
 .surco {
@@ -59,4 +72,4 @@ h1 {
 
 .mixto {
     border-style: dotted solid dashed double;
-}
+}*/
