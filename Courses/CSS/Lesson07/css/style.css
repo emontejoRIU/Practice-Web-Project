@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+h1 {
+    color: #ef476f;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    text-shadow: 2px 2px 2px #ced4da;
+    font-family: 'Comforter Brush', cursive;
+}
+
+.caja {
+    padding: 4px;
+    width: 40%;
+    height: 80px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    float: left;
+}
+
+.caja.serif{
+    background-color: #5a189a;
+}
+
+.fuente_times {
+    font-family: 'Dancing Script', cursive;
+    font-variant: small-caps;
+}
+
+.fuente_georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.caja.sans_serif {
+    background-color: #00b4d8;
+}
+
+.fuente_arial {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;/*view width (viewport) 1vw = 1%*/
+}
+
+.fuente_verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caja.monospace {
+    background-color: #f15bb5;
+}
+
+.fuente_courier {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cursive {
+    background-color: #ff8500;
+}
+
+.fuente_lucida {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
