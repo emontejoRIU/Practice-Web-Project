@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    color: crimson;
+}
+
+div {
+    padding: 15px;
+    margin: auto;
+    max-width: 400px;
+}
+
+.icono_azul {
+    font-size: 2.5em; 
+    color: cornflowerblue;
+}
+
+.icono_rojo {
+    font-size: 3em;
+    color: crimson;
+}
+
+.done {
+    vertical-align: bottom;
+    font-size: 2.5em; 
+    color: cornflowerblue;
+}
+
+.airplane {
+    font-size: 3em;
+    color: rgb(62, 173, 62);
+}
