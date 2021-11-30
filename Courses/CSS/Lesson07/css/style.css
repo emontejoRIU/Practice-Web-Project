@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comforter+Brush|Dancing+Script:wght@700&effect=shadow-multiple&display=swap');
 
 h1 {
     color: #ef476f;
@@ -26,8 +25,7 @@ h1 {
 }
 
 .fuente_times {
-    font-family: 'Dancing Script', cursive;
-    font-variant: small-caps;
+    font: italic small-caps bolder 20px 'Dancing Script', cursive;
 }
 
 .fuente_georgia {
