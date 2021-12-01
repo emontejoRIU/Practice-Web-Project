@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+html {
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+    background: radial-gradient(#ffddd2, #e29578);
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-size: 3em;
+    color: #006d77;
+}
+
+h1, .menu {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    text-shadow: 2px 2px #edf6f9;
+}
+
+.menu {
+    font-size: 1.25em;
+    background-color: #edf6f980;
+    margin: 15px auto;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color:#006d77;
+    text-shadow: 2px 2px #83c5be;
+    font-size: 1.25em;
+    padding: 100px;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color:#006d77;
+    text-shadow: 4px 4px #edf6f9;
+}
+
+section.log_in {
+    width: 20%;
+    position: fixed;
+    display: block;
+}
