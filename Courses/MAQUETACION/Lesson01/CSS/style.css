@@ -38,7 +38,6 @@ h1, .menu {
     color:#006d77;
     text-shadow: 2px 2px #83c5be;
     font-size: 1.25em;
-    padding: 100px;
 }
 
 .menu a:hover {
@@ -47,8 +46,48 @@ h1, .menu {
     text-shadow: 4px 4px #edf6f9;
 }
 
-section.log_in {
-    width: 20%;
-    position: fixed;
+div.log_in {
     display: block;
+    float: left;
+    margin: 10px 20px;
 }
+
+div.lore_impsum {
+    background-color: #83c5be;
+    width:70%;
+    margin: 10px 20px;
+    padding: 30px;
+    color: #ffffff;
+    font-family: auto;
+    display: inline-block;
+}
+
+.iframe {
+    width: 100%;
+}
+
+form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+fieldset {
+    background-color: #006d77;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #ffffff;
+}
+
+legend {
+    color: #000000;
+    font-size: 1.25em;
+}
+
+.button {
+    color: #edf6f9;
+    background-color: #e29578;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
