@@ -54,12 +54,17 @@ div.log_in {
 
 div.lore_impsum {
     background-color: #83c5be;
-    width:70%;
+    width:40%;
     margin: 10px 20px;
     padding: 30px;
     color: #ffffff;
     font-family: auto;
     display: inline-block;
+    column-count: 3;
+}
+
+.column {
+    column-span: all;
 }
 
 .iframe {
@@ -81,6 +86,7 @@ fieldset {
 legend {
     color: #000000;
     font-size: 1.25em;
+    font-family: 'Satisfy', cursive;
 }
 
 .button {
@@ -90,4 +96,6 @@ legend {
     padding: 5px;
 }
 
-
+.select_img {
+    display: inline-block;
+}
