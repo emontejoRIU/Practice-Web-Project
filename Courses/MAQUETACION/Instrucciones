@@ -1,0 +1,203 @@
+--------------------
+CENTRADO DEL LAYOUT
+--------------------
+El centrado en horizontal, que yo creo que es el más importante.
+El centrado en vertical.
+Centrado en horizontal
+Para centrar los elementos en horizontal:
+
+Si queremos centrar elementos en línea añadiremos la propiedad text-align:center al contenedor padre.
+Si queremos centrar un elemento en bloque dentro de su etiqueta contenedora añadiremos la propiedad CSS margin: 
+X auto al elemento que queremos centrar (X es una distancia expresada en cualquier unidad). El elemento debe tener anchura.
+Si tenemos varios elementos en bloque dentro de un contenedor deberemos
+Añadir la propiedad text-align:center al contenedor padre.
+Añadir la propiedad display:inline-block a los elementos a centrar.
+Usaremos contenedores flex aunque este tipo de contenedores no es objeto de este curso.
+Centrado en vertical
+Centrado vertical para elementos en línea:
+Se puede conseguir:
+
+Con el mismo padding arriba y abajo.
+Añadiendo vertical-align:middle si estamos dentro de una celda de una tabla o lo estamos simulando con la propiedad display 
+(ya hemos hablado en otros apartados de esto).
+Con contenedores flex (en cursos posteriores).
+Centrado vertical para elementos en bloque:
+Se puede conseguir:
+
+Utilizando la propiedad position en el contenedor y en el elemento (lo veremos en el próximo apartado).
+Con contenedores flex (en cursos posteriores).
+
+------------
+BOX-SIZING
+------------
+Contenido es la zona donde va el elemento propiamente dicho.
+Padding es la distancia entre el contenido y el borde.
+El Borde es el límite entre el elemento y el resto de los elementos.
+EL Margin es la separación entre el elemento y los demás elementos.
+También recordamos que la maquetación web consiste en disponer estas cajas para que cada una ocupa el lugar que queremos 
+al ser mostradas en nuestro navegador.
+
+Para conseguir esto nos encontramos que los elementos al ser representados en el navegador ocupan el siguiente espacio:
+
+La altura del elemento: altura del contenido + el padding + el borde.
+La anchura del elemento: anchura del contenido + el padding + el borde.
+En esas circunstancias, y con un diseño complejo, cuando queramos cuadrar todo perfectamente vamos a tener que echar cuentas 
+de todo, sumar todo para todas las cajas, añadir los márgenes etc…
+
+En layouts sencillos no hay problema pero la cosa se complica si mi diseño es complejo.
+
+La mejor solución para eso es establecer la propiedad CSS box-sizing:border-box y de esta manera no tendremos que echar cuentas 
+con los bordes y los paddings. El tamaño que demos al elemento será la suma de todo.
+
+Si queremos que siempre sea así añadiremos las siguientes líneas a mi CSS:
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+Es algo que DEBEMOS hacer siempre ya que nos facilitará mucho la vida a la hora de maquetar.
+
+Otras posibilidades
+La propiedad box-sizing puede tener otros dos valores:
+
+content-box que es el funcionamiento por defecto antes comentado.
+padding-box que no tienen en cuenta el borde pero si el padding y el contenido.
+
+-------
+LAYOUT
+-------
+Fixed
+Elastic
+Fluid
+Max/min Layouts
+Responsive
+Fixed Layouts
+Este tipo de layouts establecen un tamaño fijo en pixels para la anchura de los distintos elementos.
+
+La principal ventaja al usar este tipo de layouts es que tengo contral total, los distintos elementos van a tener siempre el tamaño que yo quiero.
+
+Sin embargo esta ventaja no compensa los principales problemas derivados que son:
+
+En pantallas pequeñas puede aparecer un scroll horizontal y esto es un gran error en diseño web, ya que las páginas con scroll horizontal son poco usables.
+En pantallas muy anchas puede que tenga mucho espacio en blanco a los lados del contenedor principal.
+Elastic Layouts
+Este tipo de layouts establece la anchura de los elementos en em que es el tamaño de letra por defecto (suele ser 16px).
+
+La principal ventaja es que al escalar el texto haciendo zoom in o zoom out los elementos cuyas dimensiones se hayan establecido 
+en em escalarán correctamente.
+
+Sin embargo, hay una desventaja importante, si escalo elementos que ocupen el mismo espacio éstos pueden solaparse y la única forma de 
+solucionar este problema sería comprobar el tamaño de las fuentes en todo tipo de dispositivos y todo tipo de tamaños.
+
+Fluid Layouts
+Este tipo de layouts establecen el ancho de los distintos contenedores en % (con respecto al contenedor/etiqueta padre).
+
+Si decidimos usar este tipo de layout la principal ventaja es que los elementos mantienen sus proporciones independientemente del tamaño de la pantalla.
+
+Sin embargo, debemos afrontar unas importantes desventajas:
+
+En pantallas pequeñas las columnas puede ser muy estrechas.
+En columnas estrechas los textos largos provocan celdas muy alargadas.
+Si tengo imágenes o vídeos con un tamaño fijo tendré problemas :(
+Layout con max/min width (Híbridos)
+Una posible técnica para solucionar los problemas que se nos presentaban en los anteriores tipos es la combinación de 
+los principios de uno u otro junto con la asignación a los contenedores de los siguiente atributos:
+
+max-width que hace que, en el caso de crecer, mi contenedor no supere esa anchura.
+min-width que hace que, en caso de encoger, mi contenedor no sea menor que esa anchura.
+Podría aplicarse también a la altura aunque ya hemos visto que la altura es algo “menos” importante que la anchura a la hora de maquetar.
+
+Layout Responsivos
+Son aquellos layout que cambian conforme cambian las características de la pantalla en la que se van a mostrar 
+(sobre todo conforme cambia la anchura). Este cambio es fluido.
+
+Un concepto similar y que con frecuencia se confunde es el layout adaptivo pero en estos casos no tengo un solo layout 
+si no que tenga varios dependiendo de las características y el cambio de uno a otro se produce de manera brusca.
+
+No obstante estos dos últimos escapan al alcance de este curso y no los trataremos en detalle.
+
+
+--------------------
+PROPIEDAD DISPLAY
+--------------------
+El comportamiento viene determinado por la propiedad CSS display.
+
+Cada etiqueta tiene un valor por defecto para esta propiedad pero, para conseguir lo que el diseño que queremos, podremos modificarlas 
+si lo estimamos necesario. Los valores que puede tomar son muchos pero los más usados son:
+
+inline
+inline-block
+block
+none
+Valores relacionados con tablas (veremos una lista detallada más abajo).
+Valores flex y grid que veremos en próximos cursos de este itinerario.
+Si estamos interesados podemos descubrir la lista completa de valores aquí.
+
+Elementos inline e inline-block
+Los elementos inline no rompen el flujo de la línea y se van colocando uno detrás de otro mientras caben. Aceptan margin y padding pero 
+solo se tienen en cuenta los valores horizontales. Ignoran width y height. Ejemplos: <span>,<img>,<a>, <b>, etc…
+
+Los elementos inline-block funcionan exactamente como los anteriores pero podremos asignarles width y height.
+
+Elementos en bloque
+Los elementos en bloque rompen el flujo de la línea y provocan “un salto de línea” tanto anterior como posterior. Por defecto, 
+si no lo especificamos, ocuparán toda la anchura de la etiqueta que los contiene, la etiqueta contenedora. Ejemplos: <h1>,<p>,<section>,
+<div>,<li>,<nav>, etc, …
+
+Elementos con valor none en la propiedad display
+Son elementos que desaparecen de la página. No dejan un espacio vacío aunque siguen en el código HTML. La propiedad visibility:hidden 
+sí que se deja ese hueco aunque no se muestre.
+
+Elementos con valores relativos a tablas en la propiedad display
+Al poner uno de estos valores en la propiedad display a una etiqueta HTML esta etiqueta simulará el comportamiento del elemento de 
+tabla análogo. De esta manera tenemos los siguientes posibles valores.
+
+table
+table-row
+table-cell
+table-caption
+table-column
+table-colgroup
+table-header-group
+table-footer-group
+table-row-group
+
+--------------------
+PROPIEDAD POSITION:
+--------------------
+Para centrar vamos a diferenciar entre:
+
+El centrado en horizontal, que yo creo que es el más importante.
+El centrado en vertical.
+Centrado en horizontal
+Para centrar los elementos en horizontal:
+
+Si queremos centrar elementos en línea añadiremos la propiedad text-align:center al contenedor padre.
+Si queremos centrar un elemento en bloque dentro de su etiqueta contenedora añadiremos la propiedad CSS margin: 
+X auto al elemento que queremos centrar (X es una distancia expresada en cualquier unidad). El elemento debe tener anchura.
+Si tenemos varios elementos en bloque dentro de un contenedor deberemos
+Añadir la propiedad text-align:center al contenedor padre.
+Añadir la propiedad display:inline-block a los elementos a centrar.
+Usaremos contenedores flex aunque este tipo de contenedores no es objeto de este curso.
+Centrado en vertical
+Centrado vertical para elementos en línea:
+Se puede conseguir:
+
+Con el mismo padding arriba y abajo.
+Añadiendo vertical-align:middle si estamos dentro de una celda de una tabla o lo estamos simulando con la propiedad 
+display (ya hemos hablado en otros apartados de esto).
+Con contenedores flex (en cursos posteriores).
+Centrado vertical para elementos en bloque:
+Se puede conseguir:
+
+Utilizando la propiedad position en el contenedor y en el elemento (lo veremos en el próximo apartado).
+Con contenedores flex (en cursos posteriores).
