@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html {
+  height: auto;
+  min-height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(#ffddd2, #e29578);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+  color: #006d77;
+}
+
+h1,
+.menu {
+  text-align: center;
+  font-family: "Satisfy", cursive;
+  text-shadow: 2px 2px #edf6f9;
+}
+
+.menu {
+  font-size: 1.25em;
+  background-color: #edf6f980;
+  margin: 15px auto;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #006d77;
+  text-shadow: 2px 2px #83c5be;
+  font-size: 1.25em;
+}
+
+.menu a:hover {
+  text-decoration: none;
+  color: #006d77;
+  text-shadow: 4px 4px #edf6f9;
+}
+
+div.log_in {
+  float: left;
+  margin: 10px 20px;
+}
+
+div.lore_impsum {
+  background-color: #94a7a5;
+  max-width: 70%;
+  margin: 10px 20px;
+  padding: 30px;
+  color: #ffffff;
+  display: inline-block;
+  column-count: 3;
+}
+
+.column {
+  column-span: all;
+}
+
+form {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+fieldset {
+  background-color: #006d77;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #ffffff;
+}
+
+legend {
+  color: #000000;
+  font-size: 1.25em;
+  font-family: "Satisfy", cursive;
+}
+
+.button {
+  color: #edf6f9;
+  background-color: #e29578;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.publi_container {
+  background-color: rgba(165, 42, 42, 0.582);
+  width: 100%;
+  height: 400px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.publi_container h4 {
+    padding: 40px;
+}
+
+.info_container, .contact_container, .more_container {
+    display: inline-block;
+    width: 17%;
+    height: 300px;
+    padding: 5px;
+    margin: 30px;
+    border-radius: 7px;
+    color: #edf6f9;
+}
+
+.contact_container {
+  background-color: #e29578;
+}
+
+.info_container {
+  background-color: #94a7a5;
+}
+
+.more_container {
+  background-color: #006d77;
+}
+
+button {
+    background-color: #1e201e;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  button:hover {
+      background-color: #ffffff5b;
+      color: #1e201e;
+  }
+
+.select_img {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+}
+
+.select_img img {
+  border-radius: 7px;
+  border: 2px solid #edf6f9;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+.desk_info {
+    float: left;
+}
+.tree_info {
+    float: right;
+}
