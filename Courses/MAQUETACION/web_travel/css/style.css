@@ -11,10 +11,13 @@ html {
   min-height: 100%;
   background: linear-gradient(to bottom right, #eeeeee, #a494c5);
   font-family: "Noto Sans Display", sans-serif;
+  color: #272626;
 }
 
 nav {
-  position: sticky;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
   top: 0;
   text-align: center;
   background-color: #ffffffb9;
@@ -31,9 +34,51 @@ a {
 }
 
 .principal_nav a:hover {
-    color:#a494c5;
+  color: #a494c5;
 }
 
-/* .img_footer {
-    
-} */
+.img_header img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.search_container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 562px;
+}
+
+.search_form {
+  position: relative;
+  bottom: 500px;
+  margin: auto;
+  background-color: #ffffff;
+  width: 70%;
+  padding: 20px;
+  box-shadow: 2px 2px 10px #929292;
+  height: 200px;
+}
+
+.search_form table {
+  width: 100%;
+  padding: 30px;
+  text-align: left;
+}
+
+.search_form input {
+  padding: 20px;
+  width: 300px;
+}
+
+.search_form label {
+  text-shadow: 2px 2px 2px #a494c5;
+}
+
+.button_send  {
+  float: right;
+  width: 30px;
+  font-weight: bold;
+  background-color: #a494c5;
+  color: #ffffff;
+}
