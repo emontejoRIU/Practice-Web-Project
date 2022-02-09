@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-#listado {
-    background-color: #f0ffff;
-    height: 750px;
-  }
-  
-  #listado h3 {
-    padding: 10px;
-  }
-
-  h3 {
-    font-family: 'Poppins', sans-serif;
-  }
+h3 {
+  text-align: center;
+}

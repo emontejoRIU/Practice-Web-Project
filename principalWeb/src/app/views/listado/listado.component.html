@@ -1,5 +1,5 @@
-<div id="contenedor">
-    <h3>Listado de entradas al blog:</h3>
+<div id="container">
+    <h3>LISTADO DE ENTRADA DE BLOG</h3>
     <app-entrada *ngFor="let entrada of listadoEntradas" 
     [entrada]="entrada"
     (click)="mostrarTitulo(entrada.titulo)"

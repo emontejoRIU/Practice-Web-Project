@@ -1,28 +1,28 @@
 #menu {
-    background-color: #2d2d2e;
-    width: 100%;
-    height: 40px;
-  }
-  
-  #menu li {
-    display: inline;
-  }
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  background-color: #ffffffb9;
+  box-shadow: 2px 2px 7px #929292;
+  font-weight: 500;
+}
 
-  #menu li span:hover {
-    color: white;
-    text-shadow: 1px 1px 2px black;
-  }
-  
-  #menu li span {
-    font-family: Arial;
-    float: left;
-    padding: 10px;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #ffffff;
-  }
-  
-  #acceso {
-    position: absolute;
-    right: 10px;
-  }
+#menu li,
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #272626;
+  padding: 10px;
+}
 
+#menu li:hover {
+  color: #a494c5;
+  font-weight:bold;
+}
+
+#menu li a {
+  text-decoration: none;
+  padding: 10px;
+}
